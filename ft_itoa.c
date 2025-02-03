@@ -57,4 +57,3 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 	return (str);
 }
-

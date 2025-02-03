@@ -62,7 +62,6 @@ typedef struct t_list
 	struct t_list	*next;
 }			t_list;
 
-
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **alst, t_list *new);
 int		ft_lstsize(t_list *lst);
@@ -73,4 +72,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void*));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void *));
 
+int		ft_clean(t_list **lst);
+void	*ft_voidbox(t_list **lst, int size);
 #endif

@@ -16,7 +16,7 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	char	*ptr;
 	size_t	i;
-	int		len;
+	size_t	len;
 
 	i = 0;
 	len = (count * size);
